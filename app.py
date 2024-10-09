@@ -38,7 +38,7 @@ def detect_faces():
                 {"ltwh": f"{left},{top},{width},{height}"}
             )
     
-    return flask.jsonify({'face_bounds': str(faces)})
+    return flask.jsonify({'face_bounds': faces})
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=5000)
